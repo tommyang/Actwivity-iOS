@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1680BD572107045000845195 /* ActwivityCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680BD562107045000845195 /* ActwivityCore.swift */; };
+		1680BD5921075CF500845195 /* TwitterClientLauncherProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680BD5821075CF500845195 /* TwitterClientLauncherProtocol.swift */; };
+		1680BD5B21075EAE00845195 /* TweetbotLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680BD5A21075EAE00845195 /* TweetbotLauncher.swift */; };
+		1680BD5D2107675A00845195 /* ActionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1680BD5C2107675A00845195 /* ActionType.swift */; };
 		16FBD5F5210699BB005DAF29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FBD5F4210699BB005DAF29 /* AppDelegate.swift */; };
 		16FBD5F7210699BB005DAF29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FBD5F6210699BB005DAF29 /* ViewController.swift */; };
 		16FBD5FA210699BB005DAF29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16FBD5F8210699BB005DAF29 /* Main.storyboard */; };
@@ -15,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1680BD552106FF9600845195 /* Actwivity-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Actwivity-iOS.entitlements"; sourceTree = "<group>"; };
+		1680BD562107045000845195 /* ActwivityCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActwivityCore.swift; sourceTree = "<group>"; };
+		1680BD5821075CF500845195 /* TwitterClientLauncherProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterClientLauncherProtocol.swift; sourceTree = "<group>"; };
+		1680BD5A21075EAE00845195 /* TweetbotLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetbotLauncher.swift; sourceTree = "<group>"; };
+		1680BD5C2107675A00845195 /* ActionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionType.swift; sourceTree = "<group>"; };
 		16FBD5F1210699BB005DAF29 /* Actwivity-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Actwivity-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		16FBD5F4210699BB005DAF29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16FBD5F6210699BB005DAF29 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,8 +63,13 @@
 		16FBD5F3210699BB005DAF29 /* Actwivity-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				1680BD552106FF9600845195 /* Actwivity-iOS.entitlements */,
 				16FBD5F4210699BB005DAF29 /* AppDelegate.swift */,
+				1680BD5C2107675A00845195 /* ActionType.swift */,
 				16FBD5F6210699BB005DAF29 /* ViewController.swift */,
+				1680BD562107045000845195 /* ActwivityCore.swift */,
+				1680BD5821075CF500845195 /* TwitterClientLauncherProtocol.swift */,
+				1680BD5A21075EAE00845195 /* TweetbotLauncher.swift */,
 				16FBD5F8210699BB005DAF29 /* Main.storyboard */,
 				16FBD5FB210699BC005DAF29 /* Assets.xcassets */,
 				16FBD5FD210699BC005DAF29 /* LaunchScreen.storyboard */,
@@ -96,6 +110,11 @@
 				TargetAttributes = {
 					16FBD5F0210699BB005DAF29 = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,8 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1680BD5921075CF500845195 /* TwitterClientLauncherProtocol.swift in Sources */,
+				1680BD5B21075EAE00845195 /* TweetbotLauncher.swift in Sources */,
+				1680BD5D2107675A00845195 /* ActionType.swift in Sources */,
 				16FBD5F7210699BB005DAF29 /* ViewController.swift in Sources */,
 				16FBD5F5210699BB005DAF29 /* AppDelegate.swift in Sources */,
+				1680BD572107045000845195 /* ActwivityCore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Actwivity-iOS/Actwivity-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6RP8ED4FY;
 				INFOPLIST_FILE = "Actwivity-iOS/Info.plist";
@@ -300,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Actwivity-iOS/Actwivity-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G6RP8ED4FY;
 				INFOPLIST_FILE = "Actwivity-iOS/Info.plist";
